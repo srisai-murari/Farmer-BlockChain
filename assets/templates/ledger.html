@@ -1,0 +1,13 @@
+
+<h2>Blockchain Ledger</h2>
+<a href="/ledger/add/">Add Demo Block</a>
+<hr>
+{% for block in blocks %}
+<p>
+<b>Index:</b> {{block.index}}<br>
+<b>Transactions:</b> {{block.transactions}}<br>
+<b>Hash:</b> {{block.hash}}<br>
+<b>Prev Hash:</b> {{block.previous_hash}}<br>
+</p>
+<hr>
+{% endfor %}
